@@ -19,7 +19,7 @@ All configurations about this theme.
 To define custom header cover, set the property ``HEADER_COVER`` in ``pelicanconf.py``:
 
 ```python
-HEADER_COVER = 'static/my_image.png'
+HEADER_COVER = 'static/images/my_image.png'
 ```
 
 ### Header Color
