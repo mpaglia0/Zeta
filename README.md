@@ -1,12 +1,14 @@
-# Pelican Clean Blog Theme
+# Pelican [Z]eta Theme
 
-Theme based in [Clean Blog layout](https://github.com/BlackrockDigital/startbootstrap-clean-blog).
+Theme hacked from [Gilsondev](https://github.com/gilsondev/pelican-clean-blog).
+
+Original theme based on [Clean Blog layout](https://github.com/BlackrockDigital/startbootstrap-clean-blog).
 
 >:warning: This theme requires Pelican 4.0.0 or newer.
 
 ## Screenshot
 
-![Screenshot](screenshot.png)
+![Screenshot](WIP.jpg)
 
 ## Basic configuration
 
@@ -141,6 +143,26 @@ EXTRA_PATH_METADATA = {
  - Set ``FACEBOOK_ADMINS`` to a list of Facebook account IDs which are
  associated with this blog. For example ``['12345']``. For more info see
  https://developers.facebook.com/docs/platforminsights/domains
+
+### Translation for templates strings
+
+```python
+# custom Jinja2 filter for localizing theme
+def gettext(string, lang):
+    if lang == "en":
+        return string
+    elif lang == "it":
+        if string == "Archives": return "Archivi"
+        elif string == "Archives for": return "Archivi per"
+	elif string == "Posted by": return "Pubblicato da"
+	...
+          ...
+        else: return string
+        
+ JINJA_FILTERS = {
+     "gettext": gettext,
+}
+```
 
 ### Articles
 
