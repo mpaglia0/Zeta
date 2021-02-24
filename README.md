@@ -10,9 +10,9 @@ Original theme based on [Clean Blog layout](https://github.com/BlackrockDigital/
 
 ![Screenshot](WIP.jpg)
 
-## Basic configuration
+## Basic theme configuration
 
-All configurations about this theme.
+All configurations valid only about this theme.
 
 ### Header Covers
 
