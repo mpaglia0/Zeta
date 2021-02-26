@@ -10,16 +10,16 @@ Original theme based on [Clean Blog layout](https://github.com/BlackrockDigital/
 
 ![Screenshot](WIP.jpg)
 
-## Basic configuration
+## Basic theme configuration
 
-All configurations about this theme.
+All configurations valid only about this theme.
 
 ### Header Covers
 
 To define custom header cover, set the property ``HEADER_COVER`` in ``pelicanconf.py``:
 
 ```python
-HEADER_COVER = 'static/my_image.png'
+HEADER_COVER = 'enter/your/path/my_image.png'
 ```
 
 ### Header Color
@@ -78,7 +78,7 @@ Define ``CSS_OVERRIDE`` in ``pelicanconf.py`` to insert a user defined CSS file
 after theme CSS. Example:
 
 ```python
-CSS_OVERRIDE = 'myblog.css'
+CSS_OVERRIDE = 'enter/your/path/myblog.css'
 ```
 
 ### Disable theme JavaScript
