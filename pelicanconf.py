@@ -1,3 +1,5 @@
+# Theme specific configuration parameters
+
 # custom Jinja2 filter for localizing theme
 def gettext(string, lang):
     if lang == "en":
