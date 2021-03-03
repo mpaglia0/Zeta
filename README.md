@@ -136,6 +136,7 @@ EXTRA_PATH_METADATA = {
  - If ``ADDTHIS_PUBID`` is defined sharing buttons from AddThis will appear
  at the bottom of the article;
  - ``GOOGLE_SITE_VERIFICATION`` - Google site verification token;
+ - ``BING_SITE_VERIFICATION`` - Bing site verification token;
  - Set ``SHOW_FULL_ARTICLE`` to True to show full article content on index.html
  instead of summary;
  - Set ``SHOW_SITESUBTITLE_IN_HTML`` to True to make use of the ``SITESUBTITLE``
