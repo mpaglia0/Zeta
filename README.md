@@ -12,7 +12,7 @@ Original theme based on [Clean Blog layout](https://github.com/BlackrockDigital/
 
 ## Basic theme configuration
 
-All configurations valid only about this theme.
+All following configurations are valid only about this theme.
 
 ### Header Covers
 
