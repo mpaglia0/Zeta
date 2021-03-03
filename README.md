@@ -14,6 +14,10 @@ Original theme based on [Clean Blog layout](https://github.com/BlackrockDigital/
 
 Integrating Tipue Search version 7.1 is a work in progress...
 
+## Static comments
+
+Integrate an alternative comments management based on email. Work in progress...
+
 ## Basic theme configuration
 
 All following configurations are valid only about this theme.
