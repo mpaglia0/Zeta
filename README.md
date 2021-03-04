@@ -17,6 +17,7 @@ Integrating Tipue Search version 7.1 is a work in progress...
 ## Static comments
 
 Integrate an alternative comments management based on email. Work in progress...
+For ethical/privacy reasons DISQUS comment system has been removed.
 
 ## Basic theme configuration
 
@@ -116,10 +117,9 @@ will not see the desired results.
 
 ### Analytics
 
-Accept many analytics:
+Removed Google and Gauges Analytics for ethical/privacy reasons.
+Kept only the free Matomo (aka Piwik) system.
 
- - Google Analytics: ``GOOGLE_ANALYTICS``;
- - Gauges: ``GAUGES``
  - Piwik: ``PIWIK_URL`` and ``PIWIK_SITE_ID``.
 
 ### Favicon
