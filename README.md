@@ -64,6 +64,25 @@ You can specify an external feed URL (e.g. FeedBurner) in ``SOCIAL`` using the
 rest of your ``SOCIAL`` accounts. A ``<link>`` tag for the external feed will be
 placed in ``<head>`` instead of the default Pelican feeds.
 
+## Single author tweak
+
+Pelican offers out of the box a feature for a multi-author site. In this case clicking on the author name you will be redirected
+to a page containing all articles of the clicked author. If you are the unique author of the blog, this behaviour causes a boring
+loop because all articles belong only to you...
+
+In pelicanconf.py set
+
+```python
+AUTHOR_URL = ''
+AUTHOR_SAVE_AS = ''
+AUTHORS_SAVE_AS = ''
+```
+and
+
+```python
+SINGLE_AUTHOR_SAVE_AS = 'your-static-presentation-page/index.html'
+```
+
 ### Code highlights
 
 This theme contains this color schemes:
