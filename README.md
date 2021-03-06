@@ -174,6 +174,10 @@ EXTRA_PATH_METADATA = {
 
 ### Translation for templates strings
 
+A gettext method is used. This is useful if you have only a few strings to be translated.
+
+At the bottom of your config file enter the following instruction.
+
 ```python
 # custom Jinja2 filter for localizing theme
 def gettext(string, lang):
