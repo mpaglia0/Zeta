@@ -10,27 +10,17 @@ Original theme based on [Clean Blog layout](https://github.com/BlackrockDigital/
 
 ![Screenshot](WIP.jpg)
 
-## Tipue Search integration
+## News and Improvements
 
-Work in progress...
+- Tipue Search: Work in progress...
 
-Integrating Tipue Search version 7.1
+- Contact Form: Work in progress...
 
-## Contact Form
+- Static comments: Work in progress... For ethical/privacy reasons DISQUS comment system has been removed.
 
-Work in progress...
+- Go-To-Top button: Work in progress...
 
-## Static comments
-
-Work in progress...
-
-Integrate an alternative comments management based on Contact Form.
-
-For ethical/privacy reasons DISQUS comment system has been removed.
-
-## Go-To-Top button
-
-Work in progress...
+- New more modern font set: Work in progress...
 
 # Basic theme configuration
 
