@@ -28,6 +28,10 @@ Integrate an alternative comments management based on Contact Form.
 
 For ethical/privacy reasons DISQUS comment system has been removed.
 
+## Go-To-Top button
+
+Work in progress...
+
 # Basic theme configuration
 
 All following configurations are valid only for this theme.
