@@ -12,16 +12,25 @@ Original theme based on [Clean Blog layout](https://github.com/BlackrockDigital/
 
 ## Tipue Search integration
 
-Integrating Tipue Search version 7.1 is a work in progress...
+Work in progress...
+
+Integrating Tipue Search version 7.1
+
+## Contact Form
+
+Work in progress...
 
 ## Static comments
 
-Integrate an alternative comments management based on email. Work in progress...
+Work in progress...
+
+Integrate an alternative comments management based on Contact Form.
+
 For ethical/privacy reasons DISQUS comment system has been removed.
 
-## Basic theme configuration
+# Basic theme configuration
 
-All following configurations are valid only about this theme.
+All following configurations are valid only for this theme.
 
 ### Header Covers
 
@@ -137,6 +146,7 @@ will not see the desired results.
 ### Analytics
 
 Removed Google and Gauges Analytics for ethical/privacy reasons.
+
 Kept only the free Matomo (aka Piwik) system.
 
  - Piwik: ``PIWIK_URL`` and ``PIWIK_SITE_ID``.
