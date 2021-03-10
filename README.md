@@ -26,7 +26,7 @@ Integrating [Static Comments Pelican plugin](https://github.com/getpelican/pelic
 
 - Creating a form that sends an email via PHP function.
 
-- Adding a STATIC_COMMENTS_FMT parameter in order to choose if comments have to be written in Markdown or reST format.
+- Adding a ``STATIC_COMMENTS_FMT`` parameter in order to choose if comments have to be written in Markdown or reST format.
 
 - Minor aesthetic changes.
 
