@@ -5,7 +5,7 @@
                 {# Left footer column #}
                 <div class='six columns'>
                     <ul class='sitenav'>
-                    <li><a href="{{ SITEURL }}/{{ page.url }}">Titolo</a></li>
+                    <li><a href="{{ SITEURL }}/{{ page.url }}">Titolo 1</a></li>
                     </ul>
                 </div>
                 {# /Left footer column #}
@@ -17,41 +17,33 @@
                         <a class='badge-logo' target="_blank" rel="license" title='GPLv3.0' href="http://www.gnu.org/licenses/gpl-3.0.html">
                             <img alt="GPLv3.0" src="{{ SITEURL }}/theme/images/gplv3-88x31.png">
                         </a>
-                        <div class='badge-text'>
-                            darktable is released under the <a href="http://www.gnu.org/licenses/gpl-3.0.html">GPL 3.0</a><br>
-                            <a href="{{ SITEURL }}/">&copy;{{ CURRENTYEAR }} by the darktable team.</a> »
-                            <a href="{{ SITEURL }}/credits/">credits</a>
-                        </div>
                     </div>
 
                     <div class='badge clearfix'>
-                        <a class='badge-logo' target="_blank" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">
-                            <img alt="Creative Commons License" src="{{ SITEURL }}/theme/images/CCBYSANC_88x31.png">
+                        <a class='badge-logo' target="_blank" rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">
+                            <img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png"></a>
                         </a>
                         <div class='badge-text'>
-                            Unless otherwise stated, this website and images are licensed <a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons BY-NC-SA 3.0 License</a>.
+                            {{ 'Unless otherwise stated, contents of this website are licensed '|gettext(DEFAULT_LANG) }}<a rel="license" target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">{{ 'Creative Commons BY-NC-SA 3.0 License'|gettext(DEFAULT_LANG) }}</a>.
                         </div>
                     </div>
 
                 </div>
                 {# /Right footer column #}
-
             </div>
-
+            
+            {# Bottom disclaimer #}
             <div class='row pixlslove'>
                 <div class='four columns offset-by-four'>
-                <p class="copyright text-muted">
-    {{ 'Blog powered by'|gettext(DEFAULT_LANG) }} <a href="http://getpelican.com">Pelican</a>,
-    {{ 'which takes great advantage of'|gettext(DEFAULT_DOC) }} <a href="http://python.org">Python</a>. <br />
-    {%- if CC_LICENSE or CC_LICENSE_DERIVATIVES or CC_LICENSE_COMMERCIAL %}
-    {% from 'cc-tools/cc-license.html' import cc_license_mark %}
-        {{ cc_license_mark(cc_name=CC_LICENSE,derivatives=CC_LICENSE_DERIVATIVES,commercial=CC_LICENSE_COMMERCIAL,attr_markup=CC_ATTR_MARKUP,attr_props={'title':SITENAME,'name':article.author if article else AUTHOR,'url':SITEURL}) }}
-    {% else %}
-        &copy; {{ COPY_DATE }}{{ DCOPY_DATE}} {{ AUTHOR }} ({{ 'All rights reserved'|gettext(DEFAULT_LANG) }})
-    {% endif %}
-</p>
+                        <p class="copyright text-muted">
+                                {{ 'Blog powered by'|gettext(DEFAULT_LANG) }} <a href="http://getpelican.com">Pelican</a>,
+                                {{ 'which takes great advantage of'|gettext(DEFAULT_DOC) }} <a href="http://python.org">Python</a>.<br>
+                                {{ 'Build Framework & Graphic theme: '|gettext(DEFAULT_LANG) }} <a href="{{ SITEURL }}/zeta.html"><strong>Z</strong></a><br>
+                                &copy; {{ COPY_DATE }}{{ DCOPY_DATE}} {{ AUTHOR }} ({{ 'All rights reserved'|gettext(DEFAULT_LANG) }})
+                        </p>
                 </div>
             </div>
+            {# /Bottom disclaimer #}
 
         </div>
     </section>
