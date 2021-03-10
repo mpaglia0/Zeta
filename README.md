@@ -22,6 +22,8 @@ Original theme based on [Clean Blog layout](https://github.com/BlackrockDigital/
 
 ### Enhanced Static Comments
 
+**For ethical/privacy reasons DISQUS comment system has been removed**.
+
 Integrating [Static Comments Pelican plugin](https://github.com/getpelican/pelican-plugins/tree/master/static_comments) with some improvements:
 
 - Creating a form that sends an email via PHP function.
@@ -29,8 +31,6 @@ Integrating [Static Comments Pelican plugin](https://github.com/getpelican/pelic
 - Adding a ``STATIC_COMMENTS_FMT`` parameter in order to choose if comments have to be written in Markdown or reST format.
 
 - Minor aesthetic changes.
-
-**For ethical/privacy reasons DISQUS comment system has been removed**.
 
 # Basic theme configuration
 
@@ -149,7 +149,7 @@ will not see the desired results.
 
 ### Analytics
 
-Removed Google and Gauges Analytics for ethical/privacy reasons.
+**Removed Google and Gauges Analytics for ethical/privacy reasons**.
 
 Kept only the free Matomo (aka Piwik) system.
 
