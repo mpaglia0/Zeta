@@ -16,11 +16,21 @@ Original theme based on [Clean Blog layout](https://github.com/BlackrockDigital/
 
 - Contact Form: Work in progress...
 
-- Static comments: Work in progress... For ethical/privacy reasons DISQUS comment system has been removed.
-
 - Go-To-Top button: Work in progress...
 
 - New more modern font set: Work in progress...
+
+### Enhanced Static Comments
+
+Integrating [Static Comments Pelican plugin](https://github.com/getpelican/pelican-plugins/tree/master/static_comments) with some improvements:
+
+- Creating a form that sends an email via PHP function.
+
+- Adding a STATIC_COMMENTS_FMT parameter in order to choose if comments have to be written in Markdown or reST format.
+
+- Minor aesthetic changes.
+
+**For ethical/privacy reasons DISQUS comment system has been removed**.
 
 # Basic theme configuration
 
