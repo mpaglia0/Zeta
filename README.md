@@ -12,13 +12,17 @@ Original theme based on [Clean Blog layout](https://github.com/BlackrockDigital/
 
 ## News and Improvements
 
-- Tipue Search: Work in progress...
-
 - Contact Form: Work in progress...
 
 - Go-To-Top button: Work in progress...
 
 - New more modern font set: Work in progress...
+
+### Tipue Search
+
+Tipue Search v7.1 has been integrated into the theme.
+
+TODO: styling
 
 ### Enhanced Static Comments
 
