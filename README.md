@@ -20,7 +20,7 @@ Original theme based on [Clean Blog layout](https://github.com/BlackrockDigital/
 
 ### Tipue Search
 
-Tipue Search v7.1 has been integrated into the theme.
+[Tipue Search](https://github.com/pelican-plugins/tipue-search) v7.1 has been integrated into the theme.
 
 TODO: styling
 
