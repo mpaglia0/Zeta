@@ -152,6 +152,24 @@ theme directory, for example ``footer.html``. Due to how Pelican searches the
 template directories it will first find the files in the theme directory and you
 will not see the desired results.
 
+### Dynamic Copyright year
+
+Enter the ``COPY_YEAR`` value if you need a static Copyright year.
+
+If you need a dynamic Copyright year (i.e. the current year) proceed in this way:
+
+1. At the beginning of your ``pelicanconf.py`` enter the Python function ``from datetime import date``
+2. Set ``DCOPY_DATE`` with value ``date.today().year``. This will return the current year.
+
+Example:
+
+```python
+COPY_DATE = '2015 -'
+DCOPY_DATE = date.today().year
+```
+
+Will return -> **2015 - 2021**
+
 ### Analytics
 
 **Removed Google and Gauges Analytics for ethical/privacy reasons**.
