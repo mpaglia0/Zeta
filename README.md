@@ -1,4 +1,4 @@
-# Pelican [Z]eta Theme
+# Pelican **Z** Theme
 
 Theme hacked from [Gilsondev](https://github.com/gilsondev/pelican-clean-blog).
 
@@ -22,7 +22,7 @@ Original theme based on [Clean Blog layout](https://github.com/BlackrockDigital/
 
 [Tipue Search](https://github.com/pelican-plugins/tipue-search) v7.1 has been integrated into the theme.
 
-TODO: styling
+TODO: search results styling
 
 ### Enhanced Static Comments
 
@@ -30,7 +30,7 @@ TODO: styling
 
 Integrating [Static Comments Pelican plugin](https://github.com/getpelican/pelican-plugins/tree/master/static_comments) with some improvements:
 
-- Creating a form that sends an email via PHP function.
+- Creating a form that sends an email via PHP function (optional).
 
 - Adding a ``STATIC_COMMENTS_FMT`` parameter in order to choose if comments have to be written in Markdown or reST format.
 
@@ -38,7 +38,7 @@ Integrating [Static Comments Pelican plugin](https://github.com/getpelican/pelic
 
 # Basic theme configuration
 
-All following configurations are valid only for this theme.
+All following configurations are valid only for **Z** theme.
 
 ### Header Covers
 
@@ -83,7 +83,7 @@ placed in ``<head>`` instead of the default Pelican feeds.
 
 ### Single author tweak
 
-Pelican offers out of the box a feature for a multi-author site. In this case clicking on the author name you will be redirected
+Pelican has been designed for a multi-author site. Clicking on each author name will redirected the visitor
 to a page containing all articles of the clicked author. If you are the unique author of the blog, this behaviour causes a boring
 loop because all articles belong only to you...
 
@@ -94,11 +94,12 @@ AUTHOR_URL = ''
 AUTHOR_SAVE_AS = ''
 AUTHORS_SAVE_AS = ''
 ```
-and
+so single author pages will not been created, and
 
 ```python
 SINGLE_AUTHOR_SAVE_AS = 'your-static-presentation-page/index.html'
 ```
+in order to redirect the visitor to a single static page.
 
 ### Code highlights
 
