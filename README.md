@@ -154,7 +154,7 @@ will not see the desired results.
 
 ### Dynamic Copyright year
 
-Enter the ``COPY_YEAR`` value if you need a static Copyright year.
+Enter the ``COPY_DATE`` value if you need a static Copyright year.
 
 If you need a dynamic Copyright year (i.e. the current year) proceed in this way:
 
