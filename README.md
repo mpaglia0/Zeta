@@ -161,7 +161,7 @@ If you need a dynamic Copyright year (i.e. the current year) proceed in this way
 1. At the beginning of your ``pelicanconf.py`` enter the Python function ``from datetime import date``
 2. Set ``DCOPY_DATE`` with value ``date.today().year``. This will return the current year.
 
-Example:
+You can use the static or the dynamic year or also both, like in the following example:
 
 ```python
 COPY_DATE = '2015 -'
