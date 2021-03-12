@@ -1,1 +1,40 @@
-This file will contain the script that will be loaded in <article.html> if comments will be activated
+{% if article.metadata.static_comments %}
+    <section id="comments" class="body">
+    <h2>{{ 'Comments'|gettext(DEFAULT_LANG) }}</h2>
+    {{ article.metadata.static_comments }}
+    <hr>
+     <form action="script.php">
+       <label for="title">You are sending a comment for article:</label><br>
+       <input type="text" id="title" name="title" value="xxxxx" readonly><br><br>
+       <label for="fname">Name:</label><br>
+       <input type="text" id="fname" name="fname" required><br>
+       <small>This field is mandatory</small><br><br>
+       <label for="web">Website:</label><br>
+       <input type="text" id="web" name="web"><br>
+       <small>This field is optional</small><br><br>
+       <label for="msg">Comment:</label><br>
+       <input type="text" id="msg" name="msg" required><br>
+       <small>This field is mandatory</small><br><br>
+       <input type="submit" value="Submit">
+     </form> 
+    </section>
+  {% elif %}
+    <section id="comments" class="body">
+    <h2>{{ 'Would you like to be the first to leave a comment?'|gettext(DEFAULT_LANG) }}</h3>
+    <hr>
+     <form action="script.php">
+       <label for="title">You are sending a comment for article:</label><br>
+       <input type="text" id="title" name="title" value="xxxxx" readonly><br><br>
+       <label for="fname">Name:</label><br>
+       <input type="text" id="fname" name="fname" required><br>
+       <small>This field is mandatory</small><br><br>
+       <label for="web">Website:</label><br>
+       <input type="text" id="web" name="web"><br>
+       <small>This field is optional</small><br><br>
+       <label for="msg">Comment:</label><br>
+       <input type="text" id="msg" name="msg" required><br>
+       <small>This field is mandatory</small><br><br>
+       <input type="submit" value="Submit">
+     </form>
+    </section>
+{% endif %}
