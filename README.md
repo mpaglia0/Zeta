@@ -24,11 +24,11 @@ Original theme based on [Clean Blog layout](https://github.com/BlackrockDigital/
 
 TODO: search results styling
 
-### [Static Comments Plus](https://github.com/mpaglia0/Static_Comments_Plus)
+### Static Comments Plus
 
 **For ethical/privacy reasons DISQUS comment system has been removed**.
 
-**Static Comments Plus** has been hacked from [Static Comments Pelican plugin](https://github.com/getpelican/pelican-plugins/tree/master/static_comments) and has the following improvements:
+**[Static Comments Plus]**(https://github.com/mpaglia0/Static_Comments_Plus) has been hacked from [Static Comments Pelican plugin](https://github.com/getpelican/pelican-plugins/tree/master/static_comments) and has the following improvements:
 
 - Added a ``STATIC_COMMENTS_FMT`` parameter in order to choose if comments have to be written in Markdown or reST format (default reST).
 
