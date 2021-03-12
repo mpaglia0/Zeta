@@ -38,7 +38,9 @@ TODO: search results styling
 
 # Basic theme configuration
 
-All following configurations are valid only for **Z** theme.
+>:warning: All following configurations are valid only for **Z** theme.
+
+For your convenience I put a ``pelicanconf.py`` template in this repo, where you can find a good starting point.
 
 ### Header Covers
 
