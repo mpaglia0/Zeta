@@ -154,7 +154,7 @@ will not see the desired results.
 
 ### Dynamic Copyright year
 
-Enter the ``COPY_DATE`` value if you need a static Copyright year.
+Enter a ``COPY_DATE`` value in your ``pelicanconf.py`` file if you need a static Copyright year.
 
 If you need a dynamic Copyright year (i.e. the current year) proceed in this way:
 
@@ -211,7 +211,7 @@ EXTRA_PATH_METADATA = {
 
 ### Translation for templates strings
 
-A gettext method is used. This is useful if you have only a few strings to be translated.
+A gettext method has been used. This is useful if you have only a few strings to be translated.
 
 At the bottom of your config file enter the following instruction.
 
