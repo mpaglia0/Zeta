@@ -24,15 +24,15 @@ Original theme based on [Clean Blog layout](https://github.com/BlackrockDigital/
 
 TODO: search results styling
 
-### Enhanced Static Comments
+### Static Comments Plus
 
 **For ethical/privacy reasons DISQUS comment system has been removed**.
 
-Integrating [Static Comments Pelican plugin](https://github.com/getpelican/pelican-plugins/tree/master/static_comments) with some improvements:
+**Static Comments Plus** has been hacked from [Static Comments Pelican plugin](https://github.com/getpelican/pelican-plugins/tree/master/static_comments) and has the following improvements:
 
-- Creating a form that sends an email via PHP function (optional).
+- Added a ``STATIC_COMMENTS_FMT`` parameter in order to choose if comments have to be written in Markdown or reST format (default reST).
 
-- Adding a ``STATIC_COMMENTS_FMT`` parameter in order to choose if comments have to be written in Markdown or reST format.
+- Added a PHP script that will allow visitors to send comments through a form instead of an email (like Static Comments do). The PHP function can be activated separately from the rest of the plugin.
 
 - Minor aesthetic changes.
 
