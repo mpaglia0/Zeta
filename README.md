@@ -24,7 +24,7 @@ Original theme based on [Clean Blog layout](https://github.com/BlackrockDigital/
 
 TODO: search results styling
 
-### Static Comments Plus
+### [Static Comments Plus](https://github.com/mpaglia0/Static_Comments_Plus)
 
 **For ethical/privacy reasons DISQUS comment system has been removed**.
 
