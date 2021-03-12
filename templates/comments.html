@@ -1,40 +1,61 @@
-{% if article.metadata.static_comments %}
-    <section id="comments" class="body">
-    <h2>{{ 'Comments'|gettext(DEFAULT_LANG) }}</h2>
-    {{ article.metadata.static_comments }}
-    <hr>
-     <form action="script.php">
-       <label for="title">You are sending a comment for article:</label><br>
-       <input type="text" id="title" name="title" value="xxxxx" readonly><br><br>
-       <label for="fname">Name:</label><br>
-       <input type="text" id="fname" name="fname" required><br>
-       <small>This field is mandatory</small><br><br>
-       <label for="web">Website:</label><br>
-       <input type="text" id="web" name="web"><br>
-       <small>This field is optional</small><br><br>
-       <label for="msg">Comment:</label><br>
-       <input type="text" id="msg" name="msg" required><br>
-       <small>This field is mandatory</small><br><br>
-       <input type="submit" value="Submit">
-     </form> 
-    </section>
-  {% elif %}
-    <section id="comments" class="body">
-    <h2>{{ 'Would you like to be the first to leave a comment?'|gettext(DEFAULT_LANG) }}</h3>
-    <hr>
-     <form action="script.php">
-       <label for="title">You are sending a comment for article:</label><br>
-       <input type="text" id="title" name="title" value="xxxxx" readonly><br><br>
-       <label for="fname">Name:</label><br>
-       <input type="text" id="fname" name="fname" required><br>
-       <small>This field is mandatory</small><br><br>
-       <label for="web">Website:</label><br>
-       <input type="text" id="web" name="web"><br>
-       <small>This field is optional</small><br><br>
-       <label for="msg">Comment:</label><br>
-       <input type="text" id="msg" name="msg" required><br>
-       <small>This field is mandatory</small><br><br>
-       <input type="submit" value="Submit">
-     </form>
-    </section>
+{% if STATIC_COMMENTS_PLS %}
+    {% elif article.metadata.static_comments %}
+        <section id="comments" class="body">
+        <h3>{{ 'Comments'|gettext(DEFAULT_LANG) }}</h3>
+        {{ article.metadata.static_comments }}
+        <hr>
+        <form action="script.php">
+        <label for="title">You are sending a comment for article:</label><br>
+        <input type="text" id="title" name="title" value="{{ article.metadata.title }}" readonly><br><br>
+        <label for="fname">Name:</label><br>
+        <input type="text" id="fname" name="fname" required><br>
+        <small>This field is mandatory</small><br><br>
+        <label for="web">Website:</label><br>
+        <input type="text" id="web" name="web"><br>
+        <small>This field is optional</small><br><br>
+        <label for="msg">Comment:</label><br>
+        <input type="text" id="msg" name="msg" required><br>
+        <small>This field is mandatory</small><br><br>
+        <input type="submit" value="Submit">
+        </form> 
+        </section>
+    {% else %}
+        <section id="comments" class="body">
+        <h4>{{ 'Would you like to be the first to leave a comment?'|gettext(DEFAULT_LANG) }}</h4>
+        <hr>
+        <form action="script.php">
+        <label for="title">You are sending a comment for article:</label><br>
+        <input type="text" id="title" name="title" value="{{ article.metadata.title }}" readonly><br><br>
+        <label for="fname">Name:</label><br>
+        <input type="text" id="fname" name="fname" required><br>
+        <small>This field is mandatory</small><br><br>
+        <label for="web">Website:</label><br>
+        <input type="text" id="web" name="web"><br>
+        <small>This field is optional</small><br><br>
+        <label for="msg">Comment:</label><br>
+        <input type="text" id="msg" name="msg" required><br>
+        <small>This field is mandatory</small><br><br>
+        <input type="submit" value="Submit">
+        </form>
+        </section>
+{% else %}
+    {% elif article.metadata.static_comments %}
+        <section id="comments" class="body">
+        <h3>{{ 'Comments'|gettext(DEFAULT_LANG) }}</h3>
+        <p>Want to comment? Send me an email and I'll paste
+           it here (I won't publish your address). Why don't you use an external comment
+           service like disqus, you ask? Well, I like to keep this site under my control,
+           comments included.</p>
+           <hr>
+        {{ article.metadata.static_comments }}
+        </section>
+    {% else %}
+        <section id="comments" class="body">
+        <h4>{{ 'Would you like to be the first to leave a comment?'|gettext(DEFAULT_LANG) }}</h4>
+        <hr>
+        <p>Send me an email and I'll paste
+           it here (I won't publish your address). Why don't you use an external comment
+           service like disqus, you ask? Well, I like to keep this site under my control,
+           comments included.</p>
+        </section>
 {% endif %}
