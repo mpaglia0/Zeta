@@ -16,7 +16,9 @@ Original theme based on [Clean Blog layout](https://github.com/BlackrockDigital/
 
 - Go-To-Top button: Work in progress...
 
-- New more modern font set: Work in progress...
+### New more modern font
+
+Changed the original font with a more modern, nice, readable *Fira Sans*. 
 
 ### Tipue Search
 
