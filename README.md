@@ -44,7 +44,7 @@ TODO: search results styling
 
 >:warning: All following configurations are valid only for **Z** theme.
 
->:note: All properties have to be entered in ``pelicanconf.py``.
+📑 All properties have to be entered in ``pelicanconf.py``.
 
 For your convenience, you can find a ``pelicanconf.py`` template in this repo. This is a good starting point.
 
