@@ -16,13 +16,15 @@ Original theme based on [Clean Blog layout](https://github.com/BlackrockDigital/
 
 - Go-To-Top button: Work in progress...
 
-### New more modern font
+- Site Logo: Work in progress...
 
-Changed the original font with a more modern, nice, readable *Fira Sans*. 
+### New, more modern font
+
+Changed the original Open Sans font with a more modern, nice, readable *Fira Sans*. 
 
 ### Tipue Search
 
-[Tipue Search](https://github.com/pelican-plugins/tipue-search) v7.1 has been integrated into the theme.
+[**Tipue Search**](https://github.com/pelican-plugins/tipue-search) **v7.1** has been integrated into the theme.
 
 TODO: search results styling
 
@@ -32,9 +34,9 @@ TODO: search results styling
 
 [**Static Comments Plus**](https://github.com/mpaglia0/Static_Comments_Plus) has been hacked from [Static Comments Pelican plugin](https://github.com/getpelican/pelican-plugins/tree/master/static_comments) and has the following improvements:
 
-- Added a ``STATIC_COMMENTS_FMT`` parameter in order to choose if comments have to be written in Markdown or reST format (default reST).
+- Added a ``STATIC_COMMENTS_FMT`` parameter in order to choose if comments have to be written in Markdown or reST format (default).
 
-- Added a PHP script that will allow visitors to send comments through a form instead of an email (like Static Comments do). The PHP function can be activated separately from the rest of the plugin.
+- Added a PHP script that will allow visitors to send comments through a form instead of an email (like Static Comments do).
 
 - Minor aesthetic changes.
 
@@ -42,11 +44,13 @@ TODO: search results styling
 
 >:warning: All following configurations are valid only for **Z** theme.
 
-For your convenience I put a ``pelicanconf.py`` template in this repo, where you can find a good starting point.
+>:note: All properties have to be entered in ``pelicanconf.py``.
+
+For your convenience, you can find a ``pelicanconf.py`` template in this repo. This is a good starting point.
 
 ### Header Covers
 
-To define custom header cover, set the property ``HEADER_COVER`` in ``pelicanconf.py``:
+To define custom header cover, set the property ``HEADER_COVER``:
 
 ```python
 HEADER_COVER = 'enter/your/path/my_image.png'
@@ -54,7 +58,7 @@ HEADER_COVER = 'enter/your/path/my_image.png'
 
 ### Header Color
 
-To define a simple header background color, set the property ``HEADER_COLOR`` in ``pelicanconf.py``:
+To define a simple header background color, set the property ``HEADER_COLOR``:
 
 ```python
 HEADER_COLOR = 'black'
@@ -74,7 +78,7 @@ SOCIAL = (('twitter', 'https://twitter.com/myprofile'),
           ('envelope','mailto:my@mail.address'))
 ```
 
-If you have new links add them to SOCIAL. The Name has to be the name of the corresponding FontAwesome icon.
+If you have more links add them to SOCIAL. The Name has to be the name of the corresponding FontAwesome icon.
 If ``SHOW_SOCIAL_ON_INDEX_PAGE_HEADER`` is set to True social icons will be
 shown under site sub-title on the index page.
 
@@ -91,18 +95,20 @@ Pelican has been designed for a multi-author site. Clicking on each author name 
 to a page containing all articles of the clicked author. If you are the unique author of the blog, this behaviour causes a boring
 loop because all articles belong only to you...
 
-In pelicanconf.py set
+Set
 
 ```python
 AUTHOR_URL = ''
 AUTHOR_SAVE_AS = ''
 AUTHORS_SAVE_AS = ''
 ```
-so single author pages will not been created, and
+
+so single author pages will not been created, and then
 
 ```python
 SINGLE_AUTHOR_SAVE_AS = 'your-static-presentation-page/index.html'
 ```
+
 in order to redirect the visitor to a single static page.
 
 ### Code highlights
@@ -116,7 +122,9 @@ This theme contains this color schemes:
  - Github Jekyll (Gray BG Jekyll way) - ``github_jekyll.css``;
  - Darkly (Default) - ``darkly.css``;
 
-To customize, define ``COLOR_SCHEME_CSS`` in ``pelicanconf.py`` with css filename. Example:
+To customize, define ``COLOR_SCHEME_CSS`` with css filename.
+
+Example:
 
 ```python
 COLOR_SCHEME_CSS = 'monokai.css'
@@ -124,7 +132,7 @@ COLOR_SCHEME_CSS = 'monokai.css'
 
 ### User defined CSS
 
-Define ``CSS_OVERRIDE`` in ``pelicanconf.py`` to insert a user defined CSS file
+Define ``CSS_OVERRIDE`` to insert a user defined CSS file
 after theme CSS. Example:
 
 ```python
@@ -138,12 +146,14 @@ Set ``DISABLE_CUSTOM_THEME_JAVASCRIPT`` to True if you want to disable
 
 ### User defined footer
 
-Define ``FOOTER_INCLUDE`` in ``pelicanconf.py`` to insert a custom footer text
-instead the default "Powered by Pelican". The value is a template path. You also
+Define ``FOOTER_INCLUDE`` to insert a custom footer text
+instead of the default "Powered by Pelican". The value is a template path. You also
 need to define the ``EXTRA_TEMPLATES_PATHS`` setting. If your custom footer
 template is stored under the content ``PATH`` then Pelican will try to render
 it as regular HTML page and will most likely fail. To prevent Pelican from
-trying to render your custom footer add it to ``IGNORE_FILES``. Example:
+trying to render your custom footer add it to ``IGNORE_FILES``.
+
+Example:
 
 ```python
 FOOTER_INCLUDE = 'myfooter.html'
@@ -151,19 +161,19 @@ IGNORE_FILES = [FOOTER_INCLUDE]
 EXTRA_TEMPLATES_PATHS = [os.path.dirname(__file__)]
 ```
 
-**WARNING:** avoid using names which duplicate existing templates from the
+> :warning: Avoid using names which duplicate existing templates from the
 theme directory, for example ``footer.html``. Due to how Pelican searches the
 template directories it will first find the files in the theme directory and you
 will not see the desired results.
 
 ### Dynamic Copyright year
 
-Enter a ``COPY_DATE`` value in your ``pelicanconf.py`` file if you need a static Copyright year.
+Enter a ``COPY_DATE`` value if you need a static Copyright year.
 
 If you need a dynamic Copyright year (i.e. the current year) proceed in this way:
 
 1. At the beginning of your ``pelicanconf.py`` enter the Python function ``from datetime import date``
-2. Set ``DCOPY_DATE`` with value ``date.today().year``. This will return the current year.
+2. Then set ``DCOPY_DATE`` with value ``date.today().year``. This will return the current year.
 
 You can use the static or the dynamic year or also both, like in the following example:
 
@@ -184,13 +194,13 @@ Kept only the free Matomo (aka Piwik) system.
 
 ### Favicon
 
-To define if using a favicon and format:
+To define if using a favicon and its format:
 
 ```python
 FAVICON = 'favicon.ico'
 ```
 
-**WARNING:** Is necessary static_paths configured:
+> :warning: It is necessary ``STATIC_PATHS`` configured!
 
 ```python
 STATIC_PATHS = ['images', 'extra/favicon.ico']
@@ -199,9 +209,9 @@ EXTRA_PATH_METADATA = {
 }
 ```
 
-### Other configuration
+### Other configuration parameters
 
- - If ``ADDTHIS_PUBID`` is defined sharing buttons from AddThis will appear
+ - If ``ADDTHIS_PUBID`` is defined, sharing buttons from AddThis will appear
  at the bottom of the article;
  - ``GOOGLE_SITE_VERIFICATION`` - Google site verification token;
  - ``BING_SITE_VERIFICATION`` - Bing site verification token;
@@ -217,7 +227,7 @@ EXTRA_PATH_METADATA = {
 
 A gettext method has been used. This is useful if you have only a few strings to be translated.
 
-At the bottom of your config file enter the following instruction.
+At the bottom of your ``pelicanconf.py`` file enter the following instruction:
 
 ```python
 # custom Jinja2 filter for localizing theme
@@ -247,13 +257,14 @@ def gettext(string, lang):
  Twitter cards are automatically generated if the ``twitter`` icon is configured
  in ``SOCIAL``!
 
-All image paths are relative from the site root directory. You can also use
-absolute URLs for ``og_image`` and ``twitter_image``.
+All image paths are relative from the site root directory!
+
+You can also use absolute URLs for ``og_image`` and ``twitter_image``.
 
 Example:
 
-
  - To RST
+
 ```rst
 My super title
 ##############
@@ -271,6 +282,7 @@ My super title
 ```
 
  - To Markdown
+
 ```markdown
 Title: My super title
 Date: 2010-12-03 10:20
@@ -287,9 +299,10 @@ Twitter_Image: http://example.com/twitter_cover.png
 This is the content of my super blog post.
 ```
 
-Other metada was created to assign resume of article, with ``headline``:
+Other metadata can be created to assign resume of article, with ``headline``:
 
  - To RST
+
 ```rst
 My super title
 ##############
@@ -305,6 +318,7 @@ My super title
 ```
 
  - To Markdown
+
 ```markdown
 Title: My super title
 Date: 2010-12-03 10:20
@@ -318,5 +332,7 @@ Headline: Resume of article
 
 This is the content of my super blog post.
 ```
+
+Feel free to use **Z** for your projects and send comments and/or suggestions.
 
 Enjoy!
