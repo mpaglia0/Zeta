@@ -14,13 +14,15 @@ Original theme based on [Clean Blog layout](https://github.com/BlackrockDigital/
 
 - Contact Form: Work in progress...
 
-- Go-To-Top button: Work in progress...
-
 - Site Logo: Work in progress...
 
 ### New, more modern font
 
-Changed the original Open Sans font with a more modern, nice, readable *Fira Sans*. 
+Changed the original Open Sans font with a more modern, nice, readable *Fira Sans*.
+
+### Back-To-Top button
+
+A simple/themeable back-to-top button is available
 
 ### Tipue Search
 
