@@ -20,10 +20,6 @@ Original theme based on [Clean Blog layout](https://github.com/BlackrockDigital/
 
 Changed the original Open Sans font with a more modern, nice, readable *Fira Sans*.
 
-### Back-To-Top button
-
-A simple/themeable back-to-top button is available
-
 ### Tipue Search
 
 [**Tipue Search**](https://github.com/pelican-plugins/tipue-search) **v7.1** has been integrated into the theme.
@@ -112,6 +108,12 @@ SINGLE_AUTHOR_SAVE_AS = 'your-static-presentation-page/index.html'
 ```
 
 in order to redirect the visitor to a single static page.
+
+### Back-To-Top button
+
+A simple/themeable back-to-top button is available.
+
+Simply set ``BACKTOTOP_BTN`` to ``True`` in order to enable it.
 
 ### Code highlights
 
