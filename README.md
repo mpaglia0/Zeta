@@ -12,13 +12,13 @@ Original theme based on [Clean Blog layout](https://github.com/BlackrockDigital/
 
 ## News and Improvements
 
-- Contact Form: Work in progress...
-
-- Site Logo: Work in progress...
-
 ### New, more modern font
 
 Changed the original Open Sans font with a more modern, nice, readable *Fira Sans*.
+
+### Site Logo:
+
+> Work in progress...
 
 ### Tipue Search
 
@@ -37,6 +37,10 @@ TODO: search results styling
 - Added a PHP script that will allow visitors to send comments through a form instead of an email (like Static Comments do).
 
 - Minor aesthetic changes.
+
+### Contact Form:
+
+> Work in progress...
 
 # Basic theme configuration
 
