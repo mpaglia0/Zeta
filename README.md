@@ -30,7 +30,7 @@ TODO: search results styling
 
 **For ethical/privacy reasons DISQUS comment system has been removed**.
 
-[**Static Comments Plus**](https://github.com/mpaglia0/Static_Comments_Plus) has been hacked from [Static Comments Pelican plugin](https://github.com/getpelican/pelican-plugins/tree/master/static_comments) and has the following improvements:
+[**Static Comments Plus**](https://github.com/mpaglia0/Static_Comments_Plus) has been hacked from [Static Comments](https://github.com/getpelican/pelican-plugins/tree/master/static_comments) Pelican plugin and has the following improvements:
 
 - Added a ``STATIC_COMMENTS_EXT`` parameter in order to choose if comments have to be written in *Markdown* or *reST* format (default).
 
