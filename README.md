@@ -32,7 +32,7 @@ TODO: search results styling
 
 [**Static Comments Plus**](https://github.com/mpaglia0/Static_Comments_Plus) has been hacked from [Static Comments Pelican plugin](https://github.com/getpelican/pelican-plugins/tree/master/static_comments) and has the following improvements:
 
-- Added a ``STATIC_COMMENTS_FMT`` parameter in order to choose if comments have to be written in Markdown or reST format (default).
+- Added a ``STATIC_COMMENTS_EXT`` parameter in order to choose if comments have to be written in *Markdown* or *reST* format (default).
 
 - Added a PHP script that will allow visitors to send comments through a form instead of an email (like Static Comments do).
 
