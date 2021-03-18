@@ -5,8 +5,9 @@
 Some of them are compulsory in order to let **Z** works, other not.
 
 --------------------
-|   Plugins list   |
---------------------
+
+### Plugins list
+
 
 1. Tipue search (compulsory)
 2. Assets (optional)
