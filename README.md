@@ -24,7 +24,7 @@ Changed the original Open Sans font with a more modern, nice, readable *Fira San
 
 [**Tipue Search**](https://github.com/pelican-plugins/tipue-search) **v7.1** has been integrated into the theme.
 
-TODO: search results styling
+TODO: search box & search results styling
 
 ### Static Comments Plus
 
@@ -32,7 +32,7 @@ TODO: search results styling
 
 [**Static Comments Plus**](https://github.com/mpaglia0/Static_Comments_Plus) has been hacked from [Static Comments](https://github.com/getpelican/pelican-plugins/tree/master/static_comments) Pelican plugin and has the following improvements:
 
-- Added a ``STATIC_COMMENTS_EXT`` parameter in order to choose if comments have to be written in *Markdown* or *reST* format (default).
+- Added a ``STATIC_COMMENTS_EXT`` parameter in order to choose if comments have to be written in *Markdown* or *reST* format (default). Work In Progress...
 
 - Added a PHP script that will allow visitors to send comments through a form instead of an email (like Static Comments do).
 
@@ -80,7 +80,7 @@ SOCIAL = (('twitter', 'https://twitter.com/myprofile'),
 ```
 
 If you have more links add them to SOCIAL. The Name has to be the name of the corresponding FontAwesome icon.
-If ``SHOW_SOCIAL_ON_INDEX_PAGE_HEADER`` is set to True social icons will be
+If ``SHOW_SOCIAL_ON_INDEX_PAGE_HEADER`` is set to ``True`` social icons will be
 shown under site sub-title on the index page.
 
 ### External feed URL
@@ -148,7 +148,7 @@ CSS_OVERRIDE = 'enter/your/path/myblog.css'
 
 ### Disable theme JavaScript
 
-Set ``DISABLE_CUSTOM_THEME_JAVASCRIPT`` to True if you want to disable
+Set ``DISABLE_CUSTOM_THEME_JAVASCRIPT`` to ``True`` if you want to disable
 ``js/clean-blog.min.js`` in case it affects forms and input fields.
 
 ### User defined footer
@@ -222,9 +222,9 @@ EXTRA_PATH_METADATA = {
  at the bottom of the article;
  - ``GOOGLE_SITE_VERIFICATION`` - Google site verification token;
  - ``BING_SITE_VERIFICATION`` - Bing site verification token;
- - Set ``SHOW_FULL_ARTICLE`` to True to show full article content on index.html
+ - Set ``SHOW_FULL_ARTICLE`` to ``True`` to show full article content on index.html
  instead of summary;
- - Set ``SHOW_SITESUBTITLE_IN_HTML`` to True to make use of the ``SITESUBTITLE``
+ - Set ``SHOW_SITESUBTITLE_IN_HTML`` to ``True`` to make use of the ``SITESUBTITLE``
  variable inside the ``<title>`` HTML tag;
  - Set ``FACEBOOK_ADMINS`` to a list of Facebook account IDs which are
  associated with this blog. For example ``['12345']``. For more info see
