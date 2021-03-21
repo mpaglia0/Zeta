@@ -118,6 +118,9 @@
                         {% if article.modified %}
                             <span class="meta">{{ 'Updated on'|gettext(DEFAULT_LANG) }} {{ article.locale_modified }}</span>
                         {% endif %}
+                        {% if article.readtime %}
+                            <span class="meta">{{ 'Read time, about'|gettext(DEFAULT_LANG) }} {{ article.readtime.minutes }} {{ 'minute(s)'|gettext(DEFAULT_LANG) }}</span>
+                        {% endif %}
                         {% import 'translations.html' as translations with context %}
                         {{ translations.translations_for(article) }}
                     </div>
