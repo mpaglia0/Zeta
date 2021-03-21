@@ -10,6 +10,9 @@
         {% if GOOGLE_SITE_VERIFICATION %}
             <meta name="google-site-verification" content="{{ GOOGLE_SITE_VERIFICATION }}">
         {% endif %}
+        {% if BING_SITE_VERIFICATION %}
+            <meta name="bing-site-verification" content="{{ BING_SITE_VERIFICATION }}">
+        {% endif %}
 
         <title>{% block title %}{{ SITENAME }}{% if SITESUBTITLE and SHOW_SITESUBTITLE_IN_HTML %} - {{ SITESUBTITLE }}{% endif %}{% endblock title %}</title>
 
