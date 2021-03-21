@@ -8,6 +8,8 @@
         </section>
    {% else %}
         <section id="comments" class="body">
+           <h4>{{ 'Would you like to be the first to leave a comment?'|gettext(DEFAULT_LANG) }}</h4>
+        <hr>
            {% include 'comments_form.html' %}
         </section>
 {% endif %}
