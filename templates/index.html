@@ -49,7 +49,7 @@
     {% endif %}
     {% for article in articles_page.object_list %}
         <div class="post-preview">
-            <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
+            <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="{{ 'Permalink to'|gettext(DEFAULT_LANG) }} {{ article.title|striptags }}">
                 <h2 class="post-title">
                     {{ article.title }}
                 </h2>
@@ -61,18 +61,21 @@
                 {% if article.has_summary %}
                     {{ article.summary }}
                 {% elif article.summary %}
-                    {{ article.summary|striptags|truncate(140) }}
+                    {{ article.summary }}
                 {% endif %}
                 </p>
             {% endif %}
-            <p class="post-meta">Posted by
+            <p class="post-meta">{{ 'Posted by'|gettext(DEFAULT_LANG) }}
+                {% if SINGLE_AUTHOR_SAVE_AS %}
+                <a href="{{ SITEURL }}/{{ SINGLE_AUTHOR_SAVE_AS }}">{{ AUTHOR }}</a>
+                {% else %}
                 {% for author in article.authors %}
                     <a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>
                 {% endfor %}
-                 on {{ article.locale_date }}
+                {% endif %}
+                 {{ 'on'|gettext(DEFAULT_LANG) }} {{ article.locale_date }}
             </p>
-            {% include 'comments.html' %}
-        </div>
+         </div>
     {% endfor %}
 
     {% include "pagination.html" %}

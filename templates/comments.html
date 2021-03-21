@@ -1,35 +1,13 @@
-{% if STATIC_COMMENTS_PLS %}
-    {% elif article.metadata.static_comments %}
+{% if article.metadata.static_comments %}
         <section id="comments" class="body">
-        <h3>{{ 'Comments'|gettext(DEFAULT_LANG) }}</h3>
-        {{ article.metadata.static_comments }}
+           <h3>{{ 'Comments'|gettext(DEFAULT_LANG) }}</h3>
         <hr>
-        {% include comments_form.html %}
-        </section>
-    {% else %}
-        <section id="comments" class="body">
-        <h4>{{ 'Would you like to be the first to leave a comment?'|gettext(DEFAULT_LANG) }}</h4>
+           {{ article.metadata.static_comments }}
         <hr>
-        {% include comments_form.html %}
+           {% include 'comments_form.html' %}
         </section>
-{% else %}
-    {% elif article.metadata.static_comments %}
+   {% else %}
         <section id="comments" class="body">
-        <h3>{{ 'Comments'|gettext(DEFAULT_LANG) }}</h3>
-        <p>Want to comment? Send me an email and I'll paste
-           it here (I won't publish your address). Why don't you use an external comment
-           service like disqus, you ask? Well, I like to keep this site under my control,
-           comments included.</p>
-           <hr>
-        {{ article.metadata.static_comments }}
-        </section>
-    {% else %}
-        <section id="comments" class="body">
-        <h4>{{ 'Would you like to be the first to leave a comment?'|gettext(DEFAULT_LANG) }}</h4>
-        <hr>
-        <p>Send me an email and I'll paste
-           it here (I won't publish your address). Why don't you use an external comment
-           service like disqus, you ask? Well, I like to keep this site under my control,
-           comments included.</p>
+           {% include 'comments_form.html' %}
         </section>
 {% endif %}
