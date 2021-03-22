@@ -1,16 +1,21 @@
-## Plugins already integrated in **Z**
+## Plugins used in **Z**
 
-**Z** theme already integrates some plugins you can find in this directory.
+**Z** theme uses some plugins in order to work at its best.
 
-Some of them are compulsory in order to let **Z** works, other not.
+### Required
 
---------------------
+- Neighbors
+- Assets
+- Pillow
+- BeautifulSoup4
 
-### Plugins list
+### Suggested
 
+- Tipue search
+- Readtime
+- Static Comments Plus
+- Sitemap
 
-1. Tipue search (compulsory)
-2. Assets (optional)
-3. Markdown (optional)
-4. Pillow (compulsory)
-5. BeautifulSoup4 (compulsory)
+### Optional
+
+- SEO
