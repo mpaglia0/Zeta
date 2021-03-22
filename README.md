@@ -14,7 +14,7 @@ Original theme based on [Clean Blog layout](https://github.com/BlackrockDigital/
 
 ### New, more modern font
 
-Changed the original Open Sans font with a more modern, nice, readable *Fira Sans*.
+Changed the original *Open Sans* font with a more modern, nice, readable *Fira Sans*.
 
 ### Site Logo:
 
@@ -33,6 +33,8 @@ Changed the original Open Sans font with a more modern, nice, readable *Fira San
 - Added a ``STATIC_COMMENTS_EXT`` parameter in order to choose if comments have to be written in *Markdown* or *reST* format (default). Work In Progress...
 
 - Added a PHP script that will allow visitors to send comments through a form instead of an email (like Static Comments do).
+
+>:warning: Each article needs to have the *slug* property duly assigned in order to let the plugin works!
 
 ### Read time
 
