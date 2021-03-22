@@ -4,6 +4,8 @@
         <hr>
            {{ article.metadata.static_comments }}
         <hr>
+           <h4>{{ 'You can leave a comment filling this form!'|gettext(DEFAULT_LANG) }}</h4>
+        <hr>
            {% include 'comments_form.html' %}
         </section>
    {% else %}
