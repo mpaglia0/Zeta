@@ -24,23 +24,19 @@ Changed the original Open Sans font with a more modern, nice, readable *Fira San
 
 [**Tipue Search**](https://github.com/pelican-plugins/tipue-search) **v7.1** has been integrated into the theme.
 
-TODO: search box & search results styling
-
 ### Static Comments Plus
 
 **For ethical/privacy reasons DISQUS comment system has been removed**.
 
-[**Static Comments Plus**](https://github.com/mpaglia0/Static_Comments_Plus) has been hacked from [Static Comments](https://github.com/getpelican/pelican-plugins/tree/master/static_comments) Pelican plugin and has the following improvements:
+[**Static Comments Plus**](https://github.com/mpaglia0/Static_Comments_Plus) has been hacked from [Static Comments](https://github.com/getpelican/pelican-plugins/tree/master/static_comments) plugin and has the following improvements:
 
 - Added a ``STATIC_COMMENTS_EXT`` parameter in order to choose if comments have to be written in *Markdown* or *reST* format (default). Work In Progress...
 
 - Added a PHP script that will allow visitors to send comments through a form instead of an email (like Static Comments do).
 
-- Minor aesthetic changes.
+### Read time
 
-### Contact Form:
-
-> Work in progress...
+A function that calculates and shows the approx. read time for articles has been added using the [Readtime](https://github.com/getpelican/pelican-plugins/tree/master/readtime) plugin.
 
 # Basic theme configuration
 
@@ -93,7 +89,7 @@ placed in ``<head>`` instead of the default Pelican feeds.
 ### Single author tweak
 
 Pelican has been designed for a multi-author site. Clicking on each author name will redirected the visitor
-to a page containing all articles of the clicked author. If you are the unique author of the blog, this behaviour causes a boring
+to a page containing all articles published by the selected author. If you are the unique author of the blog, this behaviour causes a boring
 loop because all articles belong only to you...
 
 Set
@@ -104,7 +100,7 @@ AUTHOR_SAVE_AS = ''
 AUTHORS_SAVE_AS = ''
 ```
 
-so single author pages will not been created, and then
+so single author pages are not created on build, and then
 
 ```python
 SINGLE_AUTHOR_SAVE_AS = 'your-static-presentation-page/index.html'
@@ -116,7 +112,7 @@ in order to redirect the visitor to a single static page.
 
 A simple/themeable back-to-top button is available.
 
-Simply set ``BACKTOTOP_BTN`` to ``True`` in order to enable it.
+Set ``BACKTOTOP_BTN`` to ``True`` in order to enable it.
 
 ### Code highlights
 
@@ -254,7 +250,7 @@ def gettext(string, lang):
 }
 ```
 
-### Articles
+### Articles in deep
 
  - To customize header cover to articles, insert the metadata ``header_cover``.
  - To customize OpenGraph images, insert the metadata ``og_image``, otherwise
@@ -273,37 +269,37 @@ Example:
  - To RST
 
 ```rst
-My super title
-##############
+My title
+########
 
 :date: 2010-10-03 10:20
 :modified: 2010-10-04 18:40
 :tags: thats, awesome
 :category: yeah
-:slug: my-super-post
-:authors: Alexis Metaireau, Conan Doyle
+:slug: my-post
+:authors: Spiderman, Conan Doyle
 :summary: Short version for index and feeds
-:header_cover: /images/posts/super-title/cover.png
-:og_image: /images/posts/super-title/facebook_cover.png
-:twitter_image: /images/posts/super-title/twitter_cover.png
+:header_cover: /images/posts/title/cover.png
+:og_image: /images/posts/title/facebook_cover.png
+:twitter_image: /images/posts/title/twitter_cover.png
 ```
 
  - To Markdown
 
 ```markdown
-Title: My super title
+Title: My title
 Date: 2010-12-03 10:20
 Modified: 2010-12-05 19:30
 Category: Python
 Tags: pelican, publishing
-Slug: my-super-post
-Authors: Alexis Metaireau, Conan Doyle
+Slug: my-post
+Authors: Spiderman, Conan Doyle
 Summary: Short version for index and feeds
-Header_Cover: /images/posts/super-title/cover.png
+Header_Cover: /images/posts/title/cover.png
 Og_Image: http://example.com/facebook_cover.png
 Twitter_Image: http://example.com/twitter_cover.png
 
-This is the content of my super blog post.
+This is the content of my blog post.
 ```
 
 Other metadata can be created to assign resume of article, with ``headline``:
@@ -311,15 +307,15 @@ Other metadata can be created to assign resume of article, with ``headline``:
  - To RST
 
 ```rst
-My super title
-##############
+My title
+########
 
 :date: 2010-10-03 10:20
 :modified: 2010-10-04 18:40
 :tags: thats, awesome
 :category: yeah
-:slug: my-super-post
-:authors: Alexis Metaireau, Conan Doyle
+:slug: my-post
+:authors: Spiderman, Conan Doyle
 :summary: Short version for index and feeds
 :headline: Resume of article
 ```
@@ -327,17 +323,17 @@ My super title
  - To Markdown
 
 ```markdown
-Title: My super title
+Title: My title
 Date: 2010-12-03 10:20
 Modified: 2010-12-05 19:30
 Category: Python
 Tags: pelican, publishing
-Slug: my-super-post
-Authors: Alexis Metaireau, Conan Doyle
+Slug: my-post
+Authors: Spiderman, Conan Doyle
 Summary: Short version for index and feeds
 Headline: Resume of article
 
-This is the content of my super blog post.
+This is the content of my blog post.
 ```
 
 Feel free to use **Z** for your projects and send comments and/or suggestions.
