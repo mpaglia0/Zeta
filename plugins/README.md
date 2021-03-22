@@ -19,3 +19,4 @@
 ### Optional
 
 - SEO
+- better tables
