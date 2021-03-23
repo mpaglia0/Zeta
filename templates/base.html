@@ -216,8 +216,10 @@
     {% endif %}
     
     <!-- Back-To-Top button -->
+    {% if BACKTOTOP_BTN %}
     <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="{{ 'Click to return on top'|gettext(DEFAULT_LANG) }}" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>   
-    
+    {% endif %}
+	
     {% include 'analytics.html' %}
 </body>
 
