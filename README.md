@@ -4,7 +4,7 @@ Theme hacked from [Gilsondev](https://github.com/gilsondev/pelican-clean-blog).
 
 Original theme based on [Clean Blog layout](https://github.com/BlackrockDigital/startbootstrap-clean-blog).
 
->:warning: This theme requires Pelican 4.0.0 or newer.
+>:warning: This theme requires [Pelican](https://github.com/getpelican/pelican) 4.0.0 or newer.
 
 ## Screenshot
 
@@ -46,7 +46,7 @@ A function that calculates and shows the approx. read time for articles has been
 
 >📑 All properties have to be entered in ``pelicanconf.py``.
 
-For your convenience, you can find a ``pelicanconf.py`` template in this repo. This is a good starting point.
+For your convenience, you can find a ``pelicanconf.py`` template in this repo. You can use it as a starting point.
 
 ### Header Covers
 
@@ -147,7 +147,9 @@ CSS_OVERRIDE = 'enter/your/path/myblog.css'
 ### Disable theme JavaScript
 
 Set ``DISABLE_CUSTOM_THEME_JAVASCRIPT`` to ``True`` if you want to disable
-``js/clean-blog.min.js`` in case it affects forms and input fields.
+``js/Z.min.js`` in case it affects forms and input fields.
+
+>:warning: disabling theme JavaScript can cause other issues like back-to-top button disappear
 
 ### User defined footer
 
