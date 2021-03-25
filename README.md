@@ -12,7 +12,7 @@ Original theme based on [Clean Blog layout](https://github.com/BlackrockDigital/
 
 ## News and Improvements
 
-### New, more modern font
+### Changed font
 
 Changed the original *Open Sans* font with a more modern, nice, readable *Fira Sans*.
 
