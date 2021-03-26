@@ -24,6 +24,10 @@ Changed the original *Open Sans* font with a more modern, nice, readable *Fira S
 
 > Work in progress...
 
+### Integration of Series plugin
+
+> Work in progress...
+
 ### Tipue Search
 
 [**Tipue Search**](https://github.com/pelican-plugins/tipue-search) **v7.1** has been integrated into the theme.
