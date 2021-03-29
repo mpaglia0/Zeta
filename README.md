@@ -26,7 +26,7 @@ Changed the original *Open Sans* font with a more modern, nice, readable *Fira S
 
 ### Integration of Series plugin
 
-In order to use the [Series](https://github.com/pelican-plugins/series) plugin simply enter a ```rst :series: ``` (reST) or ```markdown Series: ``` (Markdown) metadata in your article.
+In order to use the [Series](https://github.com/pelican-plugins/series) plugin simply enter a ```:series:``` (reST) or ```Series:``` (Markdown) metadata in your article.
 
 More information are available on the plugin repository.
 
