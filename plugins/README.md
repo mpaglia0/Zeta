@@ -1,22 +1,22 @@
-## Plugins used in **Z**
+# **Z** theme uses plugins
 
-**Z** theme uses some plugins in order to work at its best.
+A few of them are **Compulsory**, some are **Suggested** (because can activate nice features) and other are **Optional** (at your choice...).
 
-### Required
+## COMPULSORY
 
-- Neighbors
-- Assets
-- Pillow
-- BeautifulSoup4
+- [Web Assets](https://github.com/pelican-plugins/webassets)
+- [Neighbors](https://github.com/pelican-plugins/neighbors)
+- [Pillow](https://pypi.org/project/Pillow/)
+- [BeautifulSoup4](https://pypi.org/project/beautifulsoup4/)
 
-### Suggested
+## SUGGESTED
 
-- Tipue search
-- Readtime
-- Static Comments Plus
-- Sitemap
+- [Sitemap](https://github.com/pelican-plugins/sitemap)
+- [Tipue search](https://github.com/pelican-plugins/tipue-search)
+- [SEO](https://github.com/pelican-plugins/seo)
 
-### Optional
+## OPTIONAL
 
-- SEO
-- better tables
+- [Series](https://github.com/pelican-plugins/series)
+- [Readtime](https://github.com/JenkinsDev/pelican-readtime)
+- [Static Comments Plus](https://github.com/mpaglia0/Static_Comments_Plus)
