@@ -20,3 +20,4 @@ A few of them are **Compulsory**, some are **Suggested** (because can activate n
 - [Series](https://github.com/pelican-plugins/series)
 - [Readtime](https://github.com/JenkinsDev/pelican-readtime)
 - [Static Comments Plus](https://github.com/mpaglia0/Static_Comments_Plus)
+- [Bootstrap rst](https://github.com/getpelican/pelican-plugins/tree/master/bootstrap-rst)
