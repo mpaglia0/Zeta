@@ -8,7 +8,7 @@ Original theme based on [Clean Blog layout](https://github.com/BlackrockDigital/
 
 ## Screenshot
 
-![Screenshot](WIP.jpg)
+![Screenshot](Site-Screenshot.png)
 
 ## News and Improvements
 
