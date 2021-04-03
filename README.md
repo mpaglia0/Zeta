@@ -16,10 +16,6 @@ Original theme based on [Clean Blog layout](https://github.com/BlackrockDigital/
 
 Changed the original *Open Sans* font with a more modern, nice, readable *Fira Sans*.
 
-### Site Logo:
-
-> Work in progress...
-
 ### Contact Form
 
 > Work in progress...
