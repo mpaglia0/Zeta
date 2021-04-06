@@ -1,5 +1,7 @@
 # Pelican **Z** Theme
 
+>:warning: **under heavy development!** For any bug or question please feel free to ask. Thanks!
+
 Theme hacked from [Gilsondev](https://github.com/gilsondev/pelican-clean-blog).
 
 Original theme based on [Clean Blog layout](https://github.com/BlackrockDigital/startbootstrap-clean-blog).
