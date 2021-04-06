@@ -16,6 +16,16 @@ Original theme based on [Clean Blog layout](https://github.com/BlackrockDigital/
 
 Changed the original *Open Sans* font with a more modern, nice, readable *Fira Sans*.
 
+### Bootstrap icons
+
+Bootstrap icons have been made available.
+
+[How to use Bootstrap icons](https://icons.getbootstrap.com/)
+
+### Parallax header images
+
+All header images are scrollable with a nice parallax effect.
+
 ### Contact Form
 
 > Work in progress...
