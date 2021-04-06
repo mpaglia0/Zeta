@@ -180,7 +180,7 @@ Example:
 ```python
 FOOTER_INCLUDE = 'myfooter.html'
 IGNORE_FILES = [FOOTER_INCLUDE]
-EXTRA_TEMPLATES_PATHS = [os.path.dirname(__file__)]
+THEME_TEMPLATES_OVERRIDE = [os.path.dirname(__file__)]
 ```
 
 > :warning: Avoid using names which duplicate existing templates from the
