@@ -18,19 +18,13 @@ Original theme based on [Clean Blog layout](https://github.com/BlackrockDigital/
 
 Changed the original *Open Sans* font with a more modern, nice, readable *Fira Sans*.
 
-### Bootstrap icons
-
-Bootstrap icons have been made available.
-
-[How to use Bootstrap icons](https://icons.getbootstrap.com/)
-
 ### Parallax header images
 
-All header images are scrollable with a nice parallax effect.
+All header images are scrollable with a nice parallax effect (WIP)
 
 ### Contact Form
 
-> Work in progress...
+> (WIP)
 
 ### Integration of Series plugin
 
@@ -50,7 +44,7 @@ More information are available on the plugin repository.
 
 [**Static Comments Plus**](https://github.com/mpaglia0/Static_Comments_Plus) has been hacked from [Static Comments](https://github.com/getpelican/pelican-plugins/tree/master/static_comments) plugin and has the following improvements:
 
-- Added a ``STATIC_COMMENTS_EXT`` parameter in order to choose if comments have to be written in *Markdown* or *reST* format (default). Work In Progress...
+- Added a ``STATIC_COMMENTS_EXT`` parameter in order to choose if comments have to be written in *Markdown* or *reST* format (default). (WIP)
 
 - Added a PHP script that will allow visitors to send comments through a form instead of an email (like Static Comments do).
 
@@ -242,6 +236,14 @@ EXTRA_PATH_METADATA = {
     'extra/favicon.ico': {'path': 'favicon.ico'}
 }
 ```
+
+### CSS and JavaScript minification
+
+> :warning: [Webasset](https://github.com/pelican-plugins/webassets) plugin needed!
+
+Minfication of CSS and JavaScripts is managed with the Webasset plugin, so it is a **required** plugin.
+
+Minification with Webasset comes fully configured. For more information you can visit the [plugin repo](https://github.com/pelican-plugins/webassets) or the [webasset documentation](https://webassets.readthedocs.io/en/latest/index.html).
 
 ### Other configuration parameters
 
