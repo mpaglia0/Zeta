@@ -40,9 +40,9 @@ for reST:
 for Markdown:
 
 ```markdown
-/`/`/`html
+```html
 {! template.html !}
-/`/`/`
+```
 ```
 
 (Note: Markdown needs the installation of the [mdx_include](https://github.com/neurobin/mdx_include) plugin)!
