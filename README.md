@@ -24,7 +24,28 @@ All header images are scrollable with a nice parallax effect (WIP)
 
 ### Contact Form
 
-> (WIP)
+(WIP)
+
+A Contact Form template is available in the ```template``` directory.
+
+You can use it including the HTML code in a customized page in this way:
+
+for reST:
+
+```rst
+.. raw:: html
+   :file:path/to/form.html
+```
+
+for Markdown:
+
+```markdown
+/`/`/`html
+{! template.html !}
+/`/`/`
+```
+
+(Note: Markdown needs the installation of the [mdx_include](https://github.com/neurobin/mdx_include) plugin)!
 
 ### Integration of Series plugin
 
