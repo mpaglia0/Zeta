@@ -25,10 +25,27 @@
 
 {% block content %}
     <dl>
-        {% for article in dates %}
-            <dt>{{ article.locale_date }}</dt>
-            <dd><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>
-        {% endfor %}
+        {% for year, year_group in dates|groupby('date.year')|reverse %}
+        <li>{{ (year_group|first()).date.strftime('%Y') }}
+            <ul>
+                {% for month, mounts_group in year_group|groupby('date.month')|reverse %}
+                    <li>{{ (mounts_group|first()).date.strftime('%B') }}
+                        <ul>
+                            {% for day, days_group in mounts_group|groupby('date.day')|reverse %}
+                                <li>{{ (days_group|first()).date.strftime('%d') }}
+                                    <ul>
+                                        {% for article in days_group %}
+                                            <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+                                        {% endfor %}
+                                    </ul>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                {% endfor %}
+            </li>
+        </ul>
+    {% endfor %}
         <hr>
     </dl>
 {% endblock content %}

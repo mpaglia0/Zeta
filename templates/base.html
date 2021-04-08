@@ -45,13 +45,17 @@
         {% endif %}
     {% endfor %}
         <!-- Bootstrap Core CSS -->
-        <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/bootstrap.min.css" rel="stylesheet">
+        {% assets filters="cssmin", output="css/bootstrap.min.css", "css/bootstrap.css" %}
+        <link href="{{ SITEURL }}/{{ ASSET_URL }}" rel="stylesheet">
+        {% endassets %}
         
         <!-- Tipue-search CSS -->
         <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/tipuesearch/tipuesearch.css" rel="stylesheet">
         
-        <!-- Custom CSS -->
-        <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/Z.min.css" rel="stylesheet">
+        <!-- Z style CSS -->
+        {% assets filters="cssmin", output="css/Z.min.css", "css/Z.css" %}
+        <link href="{{ SITEURL }}/{{ ASSET_URL }}" rel="stylesheet">
+        {% endassets %}
 
         <!-- Code highlight color scheme -->
         {% if COLOR_SCHEME_CSS %}
@@ -66,20 +70,21 @@
         {% endif %}
         
          <!-- jQuery -->
-         <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR}}/js/jquery.min.js"></script>
+         {% assets filters="rjsmin", output="js/jquery.min.js", "js/jquery.js" %}
+         <script src="{{ SITEURL }}/{{ ASSET_URL }}"></script>
+         {% endassets %}
          
         <!-- Bootstrap Core JavaScript -->
-        <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/bootstrap.min.js"></script>
+        {% assets filters="rjsmin", output="js/bootstrap.min.js", "js/bootstrap.js" %}
+        <script src="{{ SITEURL }}/{{ ASSET_URL }}"></script>
+        {% endassets %}
 
-        <!-- Custom Fonts -->
+        <!-- FontAwesome Support -->
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-      
-         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
+                
+        <!-- load normalize CSS -->
+        <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/normalize.min.css">
+             
     {% endblock head %}
 
 	{% block opengraph %}
@@ -95,7 +100,6 @@
         {% for name,link in SOCIAL if name in ['twitter'] %}
             <meta name="twitter:card" content="summary_large_image">
             <meta name="twitter:site" content="@{{ link|replace('http://', 'https://')|replace('https://twitter.com/', '') }}">
-	    <meta name="twitter:creator" content="@{{ AUTHOR }}">
             <meta name="twitter:title" content="{{ SITENAME }}">
             <meta name="twitter:description" content="{{ SITESUBTITLE|default('View the blog.') }}">
             {% if HEADER_COVER %}
@@ -142,10 +146,10 @@
                     {% endfor %}
             
             {% block searchtop %}
-            {# This block is here so I can exclude it from the actual "search" page #}
             <li>
-                <form role="search" action="{{ SITEURL }}/search.html" onsubmit="return validateForm(this.elements['q'].value);">
-                   <input type="search" name="q" id="tipue_search_input" placeholder="{{ 'Search'|gettext(DEFAULT_LANG) }}" autocomplete="off" required>
+                <form id="searchform" action="{{ SITEURL }}/search.html" onsubmit="return validateForm(this.elements['q'].value);">
+                    <svg viewBox="0 0 16 16" height='12' width='16' style='vertical-align: middle;'></svg>
+                    <input type="text" class="searchbox" name="q" id="tipue_search_input" placeholder="{{ 'Search'|gettext(DEFAULT_LANG) }}" autocomplete="off" required>
                 </form>
             </li>
             {% endblock searchtop %}
@@ -213,14 +217,16 @@
 
     {% if not DISABLE_CUSTOM_THEME_JAVASCRIPT %}
         <!-- Custom Theme JavaScript -->
-        <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/Z.min.js"></script>
+        {% assets filters="rjsmin", output="js/Z.min.js", "js/Z.js" %}
+        <script src="{{ SITEURL }}/{{ ASSET_URL }}"></script>
+        {% endassets %}
     {% endif %}
     
     <!-- Back-To-Top button -->
     {% if BACKTOTOP_BTN %}
-    <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="{{ 'Click to return on top'|gettext(DEFAULT_LANG) }}" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>   
+    <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="{{ 'Click to return on top'|gettext(DEFAULT_LANG) }}" data-toggle="tooltip" data-placement="left"><span class="fa fa-arrow-up fa-2x"></span></a>
     {% endif %}
-	
+    
     {% include 'analytics.html' %}
 </body>
 
