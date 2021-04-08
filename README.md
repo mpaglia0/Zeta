@@ -24,8 +24,6 @@ All header images are scrollable with a nice parallax effect (WIP)
 
 ### Contact Form
 
-(WIP)
-
 A Contact Form template is available in the ```template``` directory.
 
 You can use it including the HTML code in a customized page in this way:
