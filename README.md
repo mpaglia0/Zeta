@@ -322,7 +322,7 @@ Example:
 
 ```rst
 My title
-########
+========
 
 :date: 2010-10-03 10:20
 :modified: 2010-10-04 18:40
@@ -360,7 +360,7 @@ Other metadata can be created to assign resume of article, with ``headline``:
 
 ```rst
 My title
-########
+========
 
 :date: 2010-10-03 10:20
 :modified: 2010-10-04 18:40
