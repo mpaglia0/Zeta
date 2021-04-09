@@ -12,6 +12,10 @@ Original theme based on [Clean Blog layout](https://github.com/BlackrockDigital/
 
 ![Screenshot](Site-Screenshot.png)
 
+## Status
+
+[![Bootstrap](v1.4)
+
 ## News and Improvements
 
 ### Changed font
