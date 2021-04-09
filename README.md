@@ -49,7 +49,7 @@ for Markdown:
 
 In order to use the [Series](https://github.com/pelican-plugins/series) plugin simply enter a ```:series:``` (reST) or ```Series:``` (Markdown) metadata in your article.
 
-More information are available on the plugin repository.
+More information about how to configure your template are available on the plugin repository.
 
 ![Screenshot](plugin_series.jpg)
 
