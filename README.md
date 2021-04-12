@@ -20,7 +20,7 @@ Changed the original *Open Sans* font with a more modern, nice, readable *Fira S
 
 ### Parallax header images
 
-All header images are scrollable with a nice parallax effect (WIP)
+(WIP)
 
 ### Contact Form
 
@@ -63,7 +63,7 @@ More information about how to configure your template are available on the plugi
 
 [**Static Comments Plus**](https://github.com/mpaglia0/Static_Comments_Plus) has been hacked from [Static Comments](https://github.com/getpelican/pelican-plugins/tree/master/static_comments) plugin and has the following improvements:
 
-- Added a ``STATIC_COMMENTS_EXT`` parameter in order to choose if comments have to be written in *Markdown* or *reST* format (default). (WIP)
+- Added a ``STATIC_COMMENTS_EXT`` parameter in order to choose if comments have to be written in *Markdown* or *reST* format (WIP)
 
 - Added a PHP script that will allow visitors to send comments through a form instead of an email (like Static Comments do).
 
@@ -189,7 +189,7 @@ CSS_OVERRIDE = 'enter/your/path/myblog.css'
 Set ``DISABLE_CUSTOM_THEME_JAVASCRIPT`` to ``True`` if you want to disable
 ``js/Z.min.js`` in case it affects forms and input fields.
 
->:warning: disabling theme JavaScript can cause other issues like back-to-top button disappear
+>:warning: disabling theme JavaScript can cause other unexpected issues!
 
 ### User defined footer
 
@@ -237,7 +237,7 @@ Will return -> **2015 - 2021**
 
 Kept only the free Matomo (aka Piwik) system.
 
- - Piwik: ``PIWIK_URL`` and ``PIWIK_SITE_ID``.
+ - Matomo: ``MATOMO_URL`` and ``MATOMO_SITE_ID``.
 
 ### Favicon
 
