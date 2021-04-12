@@ -1,4 +1,4 @@
-# **Z** theme uses plugins
+# Plugins used
 
 A few of them are **Compulsory**, some are **Suggested** (because can activate nice features) and other are **Optional** (at your choice...).
 
