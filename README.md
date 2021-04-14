@@ -63,7 +63,7 @@ More information about how to configure your template are available on the plugi
 
 [**Static Comments Plus**](https://github.com/mpaglia0/Static_Comments_Plus) has been hacked from [Static Comments](https://github.com/getpelican/pelican-plugins/tree/master/static_comments) plugin and has the following improvements:
 
-- Added a ``STATIC_COMMENTS_EXT`` parameter in order to choose if comments have to be written in *Markdown* or *reST* format (WIP)
+- Added a ``STATIC_COMMENTS_SOURCE`` parameter in order to choose if comments have to be written in *Markdown* or *reST* format.
 
 - Added a PHP script that will allow visitors to send comments through a form instead of an email (like Static Comments do).
 
