@@ -225,7 +225,7 @@ SOCIAL = (('twitter', 'https://twitter.com/your_user'),
 COLOR_SCHEME_CSS = 'darkly.css'
 
 # Customized CSS
-# CSS_OVERRIDE = 'assets/css/pers.css'
+# CSS_OVERRIDE = 'assets/css/custom.css'
 
 # In case of display problems set this to 'True'
 DISABLE_CUSTOM_THEME_JAVASCRIPT = False
