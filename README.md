@@ -6,7 +6,7 @@ Theme hacked from [Gilsondev's Pelican clean blog](https://github.com/gilsondev/
 
 Original theme based on [Clean Blog layout](https://github.com/BlackrockDigital/startbootstrap-clean-blog).
 
->:warning: This theme requires [Pelican](https://github.com/getpelican/pelican) 4.0.0 or newer (tested until Pelican 4.5).
+>:warning: This theme requires [Pelican](https://github.com/getpelican/pelican) > 4.0 (**Pelican 4.5 tested**)
 
 ## Screenshot
 
@@ -27,23 +27,6 @@ Changed the original *Open Sans* font with a more modern, nice, readable *Fira S
 A Contact Form template is available in the ```template``` directory.
 
 You can use it including the HTML code in a customized page in this way:
-
-for reST:
-
-```rst
-.. raw:: html
-   :file:path/to/form.html
-```
-
-for Markdown:
-
-```markdown
-```html
-{! template.html !}
-.```
-```
-
-(Note: Markdown needs the installation of the [mdx_include](https://github.com/neurobin/mdx_include) plugin)!
 
 ### Integration of Series plugin
 
@@ -77,9 +60,9 @@ A function that calculates and shows the approx. read time for articles has been
 
 >:warning: All following configurations are valid only for **Z** theme.
 
->📑 All properties have to be entered in ``pelicanconf.py``.
+All properties have to be entered in ``pelicanconf.py``.
 
-For your convenience, you can find a ``pelicanconf.py`` template in this repo. You can use it as a starting point.
+For your convenience, you can find a ``pelicanconf.py`` template in this repo. You can reference to it as a nice starting point.
 
 ### Header Covers
 
@@ -97,11 +80,11 @@ To define a simple header background color, set the property ``HEADER_COLOR``:
 HEADER_COLOR = 'black'
 ```
 
-you can use any valid css color.
+You can use any valid css color.
 
 ### Social URLs
 
-Github, Twitter and Facebook URLs set these properties:
+Github, Twitter and other URLs set these properties:
 
 ```python
 SOCIAL = (('twitter', 'https://twitter.com/myprofile'),
@@ -187,7 +170,7 @@ CSS_OVERRIDE = 'enter/your/path/myblog.css'
 ### Disable theme JavaScript
 
 Set ``DISABLE_CUSTOM_THEME_JAVASCRIPT`` to ``True`` if you want to disable
-``js/Z.min.js`` in case it affects forms and input fields.
+``js/Z.js`` in case it affects forms and input fields.
 
 >:warning: disabling theme JavaScript can cause other unexpected issues!
 
@@ -260,7 +243,7 @@ EXTRA_PATH_METADATA = {
 
 > :warning: [Webasset](https://github.com/pelican-plugins/webassets) plugin needed!
 
-Minfication of CSS and JavaScripts is managed with the Webasset plugin, so it is a **required** plugin.
+Minfication of CSS and JavaScripts is managed with the Webasset plugin, so it becomes a **required** plugin.
 
 Minification with Webasset comes fully configured. For more information you can visit the [plugin repo](https://github.com/pelican-plugins/webassets) or the [webasset documentation](https://webassets.readthedocs.io/en/latest/index.html).
 
