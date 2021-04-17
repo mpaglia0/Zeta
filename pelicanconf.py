@@ -259,4 +259,5 @@ def gettext(string, lang):
         
 JINJA_FILTERS = {
      "gettext": gettext,
+     "format": lambda x, *y, **z: x.format(*y, **z)
 }
