@@ -2,6 +2,7 @@
  * Clean Blog v1.0.0 (http://startbootstrap.com)
  * Copyright 2014 Start Bootstrap
  * Licensed under Apache 2.0 (https://github.com/IronSummitMedia/startbootstrap/blob/gh-pages/LICENSE)
+ * Amended by Maurizio Paglia for the Z theme
  */
 @font-face{
    font-family: FiraSans;
@@ -46,6 +47,17 @@ blockquote {
   color: #808080;
   font-style: italic;
 }
+
+blockquote::before {
+   font-family: "FontAwesome";
+   content: '\f10d';
+   color: #808080;
+   float: left;
+   margin-right: .5em;
+   line-height: 1;
+   font-size: 2em;
+   opacity: .5;
+}
 pre {
   background-color: transparent;
   font-size: 16px;
@@ -55,6 +67,13 @@ hr.small {
   margin: 15px auto;
   border-width: 4px;
   border-color: white;
+}
+
+hr.medium {
+   max-width: 350px;
+   margin: 15px auto;
+   border-width: 2px;
+   border-color: #aaa7a7;
 }
 .navbar-custom {
   position: absolute;
@@ -69,7 +88,7 @@ hr.small {
 }
 .navbar-custom .nav li a {
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 800;
   letter-spacing: 1px;
 }
@@ -144,7 +163,7 @@ hr.small {
 }
 .intro-header {
   background-color: #808080;
-  background: no-repeat center center;
+  background: no-repeat;
   background-attachment: scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -162,6 +181,7 @@ hr.small {
   .intro-header .site-heading,
   .intro-header .post-heading,
   .intro-header .page-heading {
+    background-attachment: scroll;
     padding: 150px 0;
   }
 }
@@ -172,7 +192,7 @@ hr.small {
 .intro-header .site-heading h1,
 .intro-header .page-heading h1 {
   margin-top: 0;
-  font-size: 50px;
+  font-size: 70px;
 }
 .intro-header .site-heading .subheading,
 .intro-header .page-heading .subheading {
@@ -186,6 +206,7 @@ hr.small {
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading h1,
   .intro-header .page-heading h1 {
+    background-attachment: scroll;
     font-size: 80px;
   }
 }
@@ -214,6 +235,7 @@ hr.small {
 }
 @media only screen and (min-width: 768px) {
   .intro-header .post-heading h1 {
+    background-attachment: scroll;
     font-size: 55px;
   }
   .intro-header .post-heading .subheading {
@@ -255,6 +277,7 @@ hr.small {
 }
 @media only screen and (min-width: 768px) {
   .post-preview > a > .post-title {
+    background-attachment: scroll;
     font-size: 36px;
   }
 }
