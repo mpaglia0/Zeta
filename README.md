@@ -1,6 +1,6 @@
 # Pelican **Z** Theme
 
->:warning: **under heavy development!** For any bug or question please feel free to ask. Thanks!
+:warning: **under heavy development!** For any bug or question please feel free to ask. Thanks!
 
 Theme hacked from [Gilsondev's Pelican clean blog](https://github.com/gilsondev/pelican-clean-blog).
 
