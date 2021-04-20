@@ -46,7 +46,7 @@ More information about how to configure your template are available on the plugi
 
 - Added a PHP script that will allow visitors to send comments through a form instead of an email (like Static Comments do).
 
->:warning: Each article needs to have the **slug** property duly assigned in order to let the plugin works!
+:warning: Each article needs to have the **slug** property duly assigned in order to let the plugin works!
 
 ### Read time
 
