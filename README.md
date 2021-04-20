@@ -18,10 +18,6 @@ Original theme based on [Clean Blog layout](https://github.com/BlackrockDigital/
 
 Changed the original *Open Sans* font with a more modern, nice, readable *Fira Sans*.
 
-### Parallax header images
-
-(WIP)
-
 ### Contact Form
 
 A Contact Form template is available in the ```template``` directory.
