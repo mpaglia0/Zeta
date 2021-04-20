@@ -6,7 +6,7 @@ Theme hacked from [Gilsondev's Pelican clean blog](https://github.com/gilsondev/
 
 Original theme based on [Clean Blog layout](https://github.com/BlackrockDigital/startbootstrap-clean-blog).
 
->:exclamation: [Pelican](https://github.com/getpelican/pelican) ver. 4.5 ready
+:exclamation: [Pelican](https://github.com/getpelican/pelican) ver. 4.5 ready
 
 ## Screenshot
 
@@ -54,7 +54,7 @@ A function that calculates and shows the approx. read time for articles has been
 
 # Basic theme configuration
 
->:warning: All following configurations are valid only for **Z** theme.
+:warning: All following configurations are valid only for **Z** theme.
 
 All properties have to be entered in ``pelicanconf.py``.
 
@@ -168,7 +168,7 @@ CSS_OVERRIDE = 'enter/your/path/myblog.css'
 Set ``DISABLE_CUSTOM_THEME_JAVASCRIPT`` to ``True`` if you want to disable
 ``js/Z.js`` in case it affects forms and input fields.
 
->:warning: disabling theme JavaScript can cause other unexpected issues!
+:warning: disabling theme JavaScript can cause other unexpected issues!
 
 ### User defined footer
 
@@ -187,7 +187,7 @@ IGNORE_FILES = [FOOTER_INCLUDE]
 THEME_TEMPLATES_OVERRIDE = [os.path.dirname(__file__)]
 ```
 
-> :warning: Avoid using names which duplicate existing templates from the
+:warning: Avoid using names which duplicate existing templates from the
 theme directory, for example ``footer.html``. Due to how Pelican searches the
 template directories it will first find the files in the theme directory and you
 will not see the desired results.
@@ -226,7 +226,7 @@ To define if using a favicon and its format:
 FAVICON = 'favicon.ico'
 ```
 
-> :warning: It is necessary ``STATIC_PATHS`` configured!
+:warning: It is necessary ``STATIC_PATHS`` configured!
 
 ```python
 STATIC_PATHS = ['images', 'extra/favicon.ico']
@@ -237,7 +237,7 @@ EXTRA_PATH_METADATA = {
 
 ### CSS and JavaScript minification
 
-> :warning: [Webasset](https://github.com/pelican-plugins/webassets) plugin needed!
+:warning: [Webasset](https://github.com/pelican-plugins/webassets) plugin needed!
 
 Minfication of CSS and JavaScripts is managed with the Webasset plugin, so it becomes a **required** plugin.
 
