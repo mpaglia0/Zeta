@@ -47,7 +47,7 @@
             </div>
         </div>
     {% endif %}
-    {% for article in articles_page.object_list %}
+    {% for article in articles_page.object_list|sort(attribute='article.locale.data', reverse = True ) %}
         <div class="post-preview">
             <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="{{ 'Permalink to'|gettext(DEFAULT_LANG) }} {{ article.title|striptags }}">
                 <h2 class="post-title">
