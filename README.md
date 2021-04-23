@@ -24,7 +24,9 @@ Changed the original *Open Sans* font with a more modern, nice, readable *Fira S
 
 A Contact Form template is available in the ```template``` directory.
 
-You can use it including the HTML code in a customized page in this way:
+You can use it including the HTML code in a customized page.
+
+:warning: needs a PHP capable hosting!
 
 ### Integration of Series plugin
 
@@ -48,7 +50,7 @@ More information about how to configure your template are available on the plugi
 
 - Added a PHP script that will allow visitors to send comments through a form instead of an email (like Static Comments do).
 
-:warning: Each article needs to have the **slug** property duly assigned in order to let the plugin works!
+:warning: Each article needs to have the ``slug`` metadata duly assigned in order to let the plugin works!
 
 ### Read time
 
