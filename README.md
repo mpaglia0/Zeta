@@ -222,6 +222,8 @@ Kept only the free Matomo (aka Piwik) system.
 
  - Matomo: ``MATOMO_URL`` and ``MATOMO_SITE_ID``.
 
+:warning: needs new Matomo > 4.0
+
 ### Favicon
 
 To define if using a favicon and its format:
