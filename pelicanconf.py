@@ -30,7 +30,9 @@ SUMMARY_MAX_LENGTH = 50
 SUMMARY_END_SUFFIX = ' …'
 
 # web site statistics
-MATOMO_SSL_URL = 'your-domain.com/matomo/' # this is only an example!
+# Matomo > 4.0 needs your Matomo installation path
+# be written withour ant trailing/initial slash!
+MATOMO_SSL_URL = 'your-domain.com/matomo'
 MATOMO_SITE_ID = 1
 
 # Feed generation is usually not desired when developing
