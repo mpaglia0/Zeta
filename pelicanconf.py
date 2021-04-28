@@ -198,7 +198,7 @@ THEME = 'themes/Z'
 # Import the date and extract the current year
 # if you need a dynamic copyright year
 from datetime import date
-COPY_DATE = u'2018 - '
+COPY_DATE = '2018 - '
 DCOPY_DATE = date.today().year
 
 # If set to 'True' hide the copyright
