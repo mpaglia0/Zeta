@@ -6,9 +6,7 @@ Theme hacked from [Gilsondev's Pelican clean blog](https://github.com/gilsondev/
 
 Original theme based on [Clean Blog layout](https://github.com/BlackrockDigital/startbootstrap-clean-blog).
 
-:warning: works only with Pelican > ver. 4.0
-
-:exclamation: **[Pelican](https://github.com/getpelican/pelican) ver. 4.6 ready**
+:warning: works only with Pelican > ver. 4.0 (**[Pelican](https://github.com/getpelican/pelican) ver. 4.6 ready**)
 
 ## Screenshot
 
