@@ -37,9 +37,9 @@ MATOMO_SITE_ID = 1
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
-FEED_ALL_RSS = "feed/all.rss.xml" # during development leave at <None>
+FEED_ALL_RSS = 'feed/all.rss.xml' # during development leave at <None>
 CATEGORY_FEED_ATOM = None
-CATEGORY_FEED_RSS = "feed/{slug}.rss.xml" # during development leave at <None>
+CATEGORY_FEED_RSS = 'feed/{slug}.rss.xml' # during development leave at <None>
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
@@ -126,34 +126,34 @@ MENUITEMS = (
 ###############
 
 PLUGIN_PATHS = [
-  "plugins"
+  'plugins'
 ]
 
 PLUGINS = [
-  "neighbors",
-  "webassets",
-  "tipue_search",
-  "static_comments_plus",
+  'neighbors',
+  'webassets',
+  'tipue_search',
+  'static_comments_plus",
   'seo', # if you will use seo plugin, please keep it commented untill ready for website publication
-  "sitemap",
-  "readtime",
-  "pelican.plugins.series,
-  "pelican_tweet",
-  "pelican_youtube"
+  'sitemap',
+  'readtime',
+  'pelican.plugins.series',
+  'pelican_tweet',
+  'pelican_youtube'
 ]
 
 # Sitemap
 SITEMAP = {
-    "format": "xml",
-    "priorities": {
-        "articles": 0.6,
-        "indexes": 0.5,
-        "pages": 0.4
+    'format': 'xml',
+    'priorities': {
+        'articles': 0.6,
+        'indexes': 0.5,
+        'pages': 0.4
     },
-    "changefreqs": {
-        "articles": "weekly",
-        "indexes": "weekly",
-        "pages": "monthly"
+    'changefreqs': {
+        'articles': 'weekly',
+        'indexes': 'weekly',
+        'pages': 'monthly'
     }
 }
 
@@ -247,19 +247,19 @@ JINJA_ENVIRONMENT = {
 
 # custom Jinja2 filter for localizing theme
 def gettext(string, lang):
-    if lang == "en":
+    if lang == 'en':
         return string
-    elif lang == "it":
-      if string == "Archives": return "Archivi"
-      elif string == "Archives for": return "Archivi per"
-      elif string == "Posted by": return "Pubblicato da"
-      elif string == "Updated on": return "Aggiornato il"
-      elif string == "Articles by": return "Articoli di"
-      elif string == "Authors": return "Autori"
-      elif string == "Categories": return "Sezioni"
+    elif lang == 'it':
+      if string == 'Archives': return 'Archivi'
+      elif string == 'Archives for': return 'Archivi per'
+      elif string == 'Posted by': return 'Pubblicato da'
+      elif string == 'Updated on': return 'Aggiornato il'
+      elif string == 'Articles by': return 'Articoli di'
+      elif string == 'Authors': return 'Autori'
+      elif string == 'Categories': return 'Sezioni'
       else: return string
         
 JINJA_FILTERS = {
-     "gettext": gettext,
-     "format": lambda x, *y, **z: x.format(*y, **z)
+     'gettext': gettext,
+     'format': lambda x, *y, **z: x.format(*y, **z)
 }
